@@ -1,3 +1,5 @@
+Ce projet est réalisé dans le cadre du module Communication Sans Fil en Licence 1 à l’Université
+Nice Sophia Antipolis
 # peoplecounter
 Le projet PeopleCounter est un système intelligent conçu pour comptabiliser en temps réel le nombre de personnes entrant et sortant d'une pièce, en utilisant des capteurs de mouvement. Le système repose sur une plateforme Arduino et utilise principalement des capteurs PIR (Passive InfraRed), un à gauche et un à droite de l'entrée de la pièce. Ces capteurs détectent les mouvements en captant les variations des rayonnements infrarouges émis par les corps humains. Le capteur à gauche est responsable de détecter les personnes entrant dans la pièce, tandis que celui à droite détecte celles qui en sortent.
 

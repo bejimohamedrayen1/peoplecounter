@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Compteur de personnes LoRa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    #count {
+      font-size: 4em;
+      background: #4a90e2;
+      color: white;
+      padding: 20px 50px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(74, 144, 226, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <h1>Nombre de personnes dans la piÃ¨ce :</h1>
+  <div id="count">Chargement...</div>
+
+  <script>
+    async function fetchData() {
+      try {
+        const response = await fetch('/data');
+        const data = await response.json();
+        document.getElementById('count').innerText = data.message;
+      } catch (e) {
+        document.getElementById('count').innerText = "Erreur de connexion";
+      }
+    }
+    setInterval(fetchData, 1000);
+    fetchData();
+  </script>
+</body>
+</html>

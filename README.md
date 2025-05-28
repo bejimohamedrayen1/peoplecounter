@@ -4,38 +4,65 @@ Nice Sophia Antipolis.
 # Lien vers le slide
 
 **----->** [Slide de la présentation du projet](peoplecounter/PEOPLECOUNTER.pdf)
-PeopleCounter – Compteur de personnes avec boutons poussoirs
-Le projet PeopleCounter est un système simple et interactif conçu pour comptabiliser en temps réel le nombre de personnes entrant et sortant d'une pièce. Contrairement à la version initiale utilisant des capteurs PIR (détection de mouvement), ce projet repose désormais sur deux boutons poussoirs pour une détection manuelle et contrôlée.
+# 🧮 PeopleCounter – Compteur de personnes avec boutons poussoirs
 
-Le système est basé sur une plateforme Arduino. Il utilise deux boutons :
+**PeopleCounter** est un système simple et interactif conçu pour comptabiliser en temps réel le nombre de personnes **entrant** et **sortant** d'une pièce.  
+Contrairement à la version initiale utilisant des capteurs PIR, cette version repose sur **deux boutons poussoirs** pour une détection manuelle et contrôlée.
 
-Bouton gauche : utilisé lorsqu'une personne entre dans la pièce.
+---
 
-Bouton droit : utilisé lorsqu'une personne sort de la pièce.
+## ⚙️ Matériel utilisé
 
-Chaque appui sur l’un des boutons modifie le compteur de personnes :
+- 1x Carte Arduino (Uno, Nano, ESP32, etc.)
+- 2x **Boutons poussoirs**
+  - **Gauche** : pour signaler une **entrée**
+  - **Droite** : pour signaler une **sortie**
+- 1x Module **LoRa 868 MHz**
+- 1x **Boîtier imprimé en 3D** (optionnel)
+- Câblage / Breadboard
 
-L’appui sur le bouton gauche incrémente le compteur.
+---
 
-L’appui sur le bouton droit décrémente le compteur.
+## 🧠 Fonctionnement
 
-Ce fonctionnement permet une gestion fiable et maîtrisée du comptage, notamment dans des contextes où une détection automatique n’est pas nécessaire ou souhaitée.
+- Lorsqu'on **appuie sur le bouton gauche**, le compteur de personnes est **incrémenté**.
+- Lorsqu'on **appuie sur le bouton droit**, le compteur est **décrémenté**.
+- Un **délai de 300 ms** est appliqué après chaque appui pour éviter les rebonds mécaniques.
+- Le nombre total de personnes est **envoyé par LoRa** à une unité distante.
 
-Une fonctionnalité clé du système est la transmission sans fil des données à une unité distante via un module LoRa à 868 MHz. Cela permet d'envoyer régulièrement le nombre de personnes présentes dans la pièce à une plateforme externe, ce qui est particulièrement utile pour des applications de surveillance à distance.
+---
 
-Un délai de 300 ms est intégré après chaque appui pour éviter les doubles comptages liés aux rebonds mécaniques des boutons.
+## 📡 Communication
 
-L’ensemble des composants est intégré dans un boîtier personnalisé imprimé en 3D, offrant une solution compacte, fonctionnelle et esthétique.
+Les données sont transmises via un module **LoRa à 868 MHz**, permettant une surveillance à distance.  
+Ceci est utile pour la gestion d'espaces publics, de salles de réunion ou d'événements.
 
-Points forts du projet :
-Compteur de personnes manuel et fiable
+---
 
-Communication sans fil longue portée via LoRa
+## 🖨️ Boîtier
 
-Conception simple et pédagogique
+Tous les composants peuvent être intégrés dans un **boîtier personnalisé imprimé en 3D**, pour une solution **compacte** et **esthétique**.
 
-Boîtier imprimé en 3D pour un rendu propre
+---
 
-Idéal pour des projets éducatifs ou de prototypage rapide
+## ✅ Avantages du projet
 
-Ce projet constitue une excellente introduction à l’Arduino, à la communication LoRa, à la gestion d’entrées utilisateur, et à la prototypage électronique. Il peut être adapté à divers contextes comme la gestion des accès dans des petites salles, des événements ou des espaces partagés.
+- 🧩 Simplicité d’utilisation
+- 📡 Transmission sans fil longue portée
+- 🛠️ Facile à fabriquer et à personnaliser
+- 👨‍🏫 Idéal pour l’apprentissage Arduino / LoRa / prototypage
+- 🏢 Applicable à la gestion d'espaces physiques (bureaux, salles, événements)
+
+---
+
+## 🚀 Possibilités d’amélioration
+
+- Ajout d’un **écran OLED** pour afficher le compteur en temps réel
+- Intégration dans un **système de gestion de bâtiment**
+- Envoi de **notifications** ou journalisation des données
+
+---
+
+## 📁 Structure du dépôt
+
+

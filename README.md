@@ -39,11 +39,6 @@ Ceci est utile pour la gestion d'espaces publics, de salles de réunion ou d'év
 
 ---
 
-## 🖨️ Boîtier
-
-Tous les composants peuvent être intégrés dans un **boîtier personnalisé imprimé en 3D**, pour une solution **compacte** et **esthétique**.
-
----
 
 ## ✅ Avantages du projet
 

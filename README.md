@@ -18,7 +18,6 @@ Contrairement à la version initiale utilisant des capteurs PIR, cette version r
   - **Gauche** : pour signaler une **entrée**
   - **Droite** : pour signaler une **sortie**
 - 1x Module **LoRa 868 MHz**
-- 1x **Boîtier imprimé en 3D** (optionnel)
 - Câblage / Breadboard
 
 ---
@@ -29,13 +28,6 @@ Contrairement à la version initiale utilisant des capteurs PIR, cette version r
 - Lorsqu'on **appuie sur le bouton droit**, le compteur est **décrémenté**.
 - Un **délai de 300 ms** est appliqué après chaque appui pour éviter les rebonds mécaniques.
 - Le nombre total de personnes est **envoyé par LoRa** à une unité distante.
-
----
-
-## 📡 Communication
-
-Les données sont transmises via un module **LoRa à 868 MHz**, permettant une surveillance à distance.  
-Ceci est utile pour la gestion d'espaces publics, de salles de réunion ou d'événements.
 
 ---
 

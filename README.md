@@ -63,6 +63,5 @@ Tous les composants peuvent être intégrés dans un **boîtier personnalisé im
 
 ---
 
-## 📁 Structure du dépôt
 
 
